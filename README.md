@@ -1,8 +1,7 @@
 # MockeD
 
-[![CI](https://github.com/funkwerk/mocked/workflows/CI/badge.svg)](https://github.com/funkwerk/mocked/actions?query=workflow%3ACI)
-[![License](https://img.shields.io/badge/license-MPL_2.0-blue.svg)](https://raw.githubusercontent.com/funkwerk/mocked/master/LICENSE)
-[![codecov](https://codecov.io/gh/funkwerk/mocked/branch/master/graph/badge.svg)](https://codecov.io/gh/funkwerk/mocked)
+[![CI](https://github.com/funkwerk-mobility/mocked/workflows/CI/badge.svg)](https://github.com/funkwerk-mobility/mocked/actions?query=workflow%3ACI)
+[![License](https://img.shields.io/badge/license-MPL_2.0-blue.svg)](https://raw.githubusercontent.com/funkwerk-mobility/mocked/master/LICENSE)
 [![Dub version](https://img.shields.io/dub/v/mocked.svg)](https://code.dlang.org/packages/mocked)
 [![Dub downloads](https://img.shields.io/dub/dt/mocked.svg)](https://code.dlang.org/packages/mocked)
 

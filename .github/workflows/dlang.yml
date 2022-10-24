@@ -14,11 +14,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    
+
     - name: Setup DMD
       uses: dlang-community/setup-dlang@v1
       with:
-        compiler: dmd-2.100.0
+        compiler: dmd-2.100.2
 
     - name: Cache
       uses: actions/cache@v2
@@ -34,9 +34,6 @@ jobs:
       run: |
         dub build --build=unittest-cov --config=unittest
         ./mocked -s
-        
-    - name: Generate coverage report
-      run: bash <(curl -s https://codecov.io/bash)
 
   audit:
     runs-on: ubuntu-latest
@@ -47,7 +44,7 @@ jobs:
     - name: Setup DMD
       uses: dlang-community/setup-dlang@v1
       with:
-        compiler: dmd-2.100.0
+        compiler: dmd-2.100.2
 
     - name: Cache
       uses: actions/cache@v2
@@ -56,5 +53,5 @@ jobs:
         key: ${{ runner.os }}-audit-${{ hashFiles('**/dub.json') }}
         restore-keys: ${{ runner.os }}-audit-
 
-    - run: dub fetch dscanner --version=0.12.1
+    - run: dub fetch dscanner@0.12.2
     - run: dub run dscanner -- --styleCheck source tests
